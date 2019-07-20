@@ -8,11 +8,13 @@
 	<script>
         var result = +prompt('Введите число');
         var i = "*";
+        var j = '';
         if (result > 0 && result === result) { 
             while ( i.length <= result) {
-                console.log( i + '\n');
-                i += "*";
+              j += i + '\n';
+              i += "*"; 
             }
+            console.log(j);
         } else {
             alert( 'Это не число')
         } 
